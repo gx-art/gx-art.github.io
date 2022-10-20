@@ -137,16 +137,13 @@
             Post -->
             <div class="typo" style="padding: 3rem;">
                 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><style>
-    /*视频适配*/
+/*视频适配*/
 #video{
     position: relative;
     width: 100%;
-    height: 100%;             
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;      
+    height: 100%;              /*高度设置这里无效，设置为0，用padding撑开div*/      
 }
-#video #ull{
+#video ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -161,26 +158,29 @@
 #video ul li{
     list-style: none;
     margin-top: 20px;
-    width: 100%;
-    height: 100%; 
+    width: 400px;
+    height: 250px;
 }
-#video iframe {
+#video ul li iframe {
     position: relative;
-    align-items: center;
-    width: 300px;
-    height: 200px;
-    
+    width: 100%;
+    height: 100%;  
 }
-p {
+h2{
     align-items:center;
 }
-
 </style>
 <div id="video">
+<ul>
+<li>
 <iframe src="//player.bilibili.com/player.html?bvid=BV15M4y157jL&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe> 
+</li>
+<li>
 <iframe src="//player.bilibili.com/player.html?bvid=BV15f4y1z7rE&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</li>
+</ul>
 </div>
-<p><a target="_blank" rel="noopener" href="https://m.cctalk.com/inst/snnn6h2b">前往CCTalk查看完整的课程内容</a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+<h4><a target="_blank" rel="noopener" href="https://m.cctalk.com/inst/snnn6h2b">前往CCTalk查看完整的课程内容</a></h4></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
         };
